@@ -7,10 +7,10 @@ const loadMeals = (searchText) => {
 
 }
 const displayMeals = meals => {
+    const mealsContainer = document.getElementById('mealsContainer');
+    mealsContainer.innerHTML = '';
     // console.log(meals);
     meals.forEach(meal => {
-        const mealsContainer = document.getElementById('mealsContainer');
-        mealsContainer.innerHTML = '';
         console.log(meal);
         const mealDiv = document.createElement('div');
         mealDiv.classList.add('col');
